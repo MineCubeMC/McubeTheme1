@@ -12,12 +12,12 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf McubeTheme.tar.gz pterodactyl
+    tar -cvf McubeTheme1.tar.gz pterodactyl
     echo "Installing MineCube Official Theme...Please wait..."
     cd /var/www/pterodactyl
-    rm -rf McubeTheme
-    git clone https://github.com/MineCubeMC/McubeTheme1.git
-    cd McubeTheme
+    rm -rf McubeTheme1
+    git clone https://github.com/MineCubeMC/McubeTheme11.git
+    cd McubeTheme1
     rm /var/www/pterodactyl/resources/scripts/MineCube.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
@@ -53,14 +53,14 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/MineCubeMC/McubeTheme1/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/MineCubeMC/McubeTheme11/main/repair.sh)
 }
 
 restoreBackUp(){
     echo "Restoring backup...Sorry for the Issues caused."
     cd /var/www/
-    tar -xvf McubeTheme.tar.gz
-    rm McubeTheme.tar.gz
+    tar -xvf McubeTheme1.tar.gz
+    rm McubeTheme1.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
