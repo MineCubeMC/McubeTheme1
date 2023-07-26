@@ -15,7 +15,7 @@
 
 Go to your vps where the panel is hosted and run
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/MBG-Codes-You/McubeTheme/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/MineCubeMC/McubeTheme1/main/install.sh)
  ```
 **⚠️ use `sudo su` if you are not root**
 
