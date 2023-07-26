@@ -16,7 +16,7 @@ installTheme(){
     echo "Installing MineCube Official Theme...Please wait..."
     cd /var/www/pterodactyl
     rm -rf McubeTheme
-    git clone https://github.com/MBG-Codes-You/McubeTheme.git
+    git clone https://github.com/MineCubeMC/McubeTheme1.git
     cd McubeTheme
     rm /var/www/pterodactyl/resources/scripts/MineCube.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -53,7 +53,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/MBG-Codes-You/McubeTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/MineCubeMC/McubeTheme1/main/repair.sh)
 }
 
 restoreBackUp(){
